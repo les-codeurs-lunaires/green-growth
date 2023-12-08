@@ -110,7 +110,7 @@ body {
 
 #h1-title {
     position: relative;
-    top: 0;
+    top: 20%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -190,8 +190,8 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 5%;
-    padding: 2.5%;
+    height: 4%;
+    padding: 1% 2.5% 0;
     background: var(--bg-color);
 }
 
@@ -212,4 +212,20 @@ body {
 .footer a, .footer-static a {
     position: relative;
     padding: 10px;
+}
+
+.profile {
+    margin-top: 100px;
+    right: 25%;
+    width: 250px;
+}
+
+.contributeurs, .remerciementes {
+    left: 0;
+    margin-top: 2000px
+    width: 100%;
+}
+
+.qzdzdq {
+    visibility: hidden;
 }
