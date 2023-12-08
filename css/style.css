@@ -213,3 +213,19 @@ body {
     position: relative;
     padding: 10px;
 }
+
+.profile {
+    margin-top: 100px;
+    right: 25%;
+    width: 250px;
+}
+
+.contributeurs, .remerciementes {
+    left: 0;
+    margin-top: 2000px
+    width: 100%;
+}
+
+.qzdzdq {
+    visibility: hidden;
+}
