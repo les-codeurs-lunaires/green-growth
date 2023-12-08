@@ -60,6 +60,9 @@ Bouton1 = document.querySelector(`button#bouton-1`);
 Bouton2 = document.querySelector(`button#bouton-2`);
 Bouton3 = document.querySelector(`button#bouton-3`);
 Bouton4 = document.querySelector(`button#bouton-4`);
+choix = [Bouton1, Bouton2, Bouton3, Bouton4]
+choix.forEach(button => button.style.visibility = "visible")
+choix.forEach(button => AfficherTexte(button, data[indice]["reponse"][choix.indexOf(button)]))
 
 Bouton1.addEventListener("click", () => AfficherFrame2(1));
 Bouton2.addEventListener("click", () => AfficherFrame2(2));
