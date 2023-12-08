@@ -134,91 +134,106 @@ const data = [
     {
         "question": "Passer 20 minutes par jour à regarder des vidéos, ce n’est pas si grave d’un point de vue écologique",
         "correction": [
-            null,
-            null,
+            "En effet ! 20 minutes par jour, cela peut sembler peu, mais ça représente néanmoins 50KgCO2eq par an. Comparé à d’autres facteurs, on pourrait croire que ce chiffre est négligeable, mais il est multiplié par chaque adepte du streaming, et comme le disait Antoine Furetière : les petits ruisseaux forment les grandes rivières.",
+            "C’est faux ! Contrairement aux idées reçu, 20 minutes de vidéo par jours représente 50KgCO2eq par an, par personne. Ce nombre, de prime abord négligeable face, par exemple, aux émission du Bâtiment ou de l’Agriculture, est en réalité un des « petits ruisseaux qui forment les grandes rivières ».",
             null,
             null,
         ],
         "reponse": [
-            null,
-            null,
+            "FAUX",
+            "VRAI",
             null,
             null,
         ]
     },
     {
-        "question": null,
+        "question": "A quoi dois-je attention chez moi ?",
         "correction": [
+            "Toutes ces réponses sont juste !\n" +
+            "Un appareil électrique endommagé à tendance à dysfonctionner et à plus consommer, mais l’intérêt principal de la réparation est d’épargner à la planète les 200KgCO2eq qu’émettent en moyenne la fabrication de 200€ d’électroménager.\n" +
+            "L’avantage du recyclage, lui, peut difficilement être estimé car il présente trop de variable (localisation, infrastructure de traitement, type de matière), mais il s’agit d’un acte qui peut réduire de 40% l’impact carbone du traitement des déchets.\n" +
+            "Eteindre la lumière, un geste simple, mécanique, utile… Enfin, pas tant que ça. En réalité, si vous laissiez allumé une vieille ampoule à incandescence, connu pour être peu écologique, pendant une année entière, soit pendant 8760 heures d’affilés, vous produiriez moins d’équivalent CO2 que la production d’une paire de chaussettes : 15KgCO2eq.\n" +
+            "Les lampes à LED sont certes plus écologiques, mais c’est surtout de la poudre aux yeux au vu de ces chiffres, une faibles avancé quand d’autres actions pourraient apporter tellement plus.",
+            "Toutes ces réponses sont juste !\n" +
+            "Un appareil électrique endommagé à tendance à dysfonctionner et à plus consommer, mais l’intérêt principal de la réparation est d’épargner à la planète les 200KgCO2eq qu’émettent en moyenne la fabrication de 200€ d’électroménager.\n" +
+            "L’avantage du recyclage, lui, peut difficilement être estimé car il présente trop de variable (localisation, infrastructure de traitement, type de matière), mais il s’agit d’un acte qui peut réduire de 40% l’impact carbone du traitement des déchets.\n" +
+            "Eteindre la lumière, un geste simple, mécanique, utile… Enfin, pas tant que ça. En réalité, si vous laissiez allumé une vieille ampoule à incandescence, connu pour être peu écologique, pendant une année entière, soit pendant 8760 heures d’affilés, vous produiriez moins d’équivalent CO2 que la production d’une paire de chaussettes : 15KgCO2eq.\n" +
+            "Les lampes à LED sont certes plus écologiques, mais c’est surtout de la poudre aux yeux au vu de ces chiffres, une faibles avancé quand d’autres actions pourraient apporter tellement plus.",
+            "Toutes ces réponses sont juste !\n" +
+            "Un appareil électrique endommagé à tendance à dysfonctionner et à plus consommer, mais l’intérêt principal de la réparation est d’épargner à la planète les 200KgCO2eq qu’émettent en moyenne la fabrication de 200€ d’électroménager.\n" +
+            "L’avantage du recyclage, lui, peut difficilement être estimé car il présente trop de variable (localisation, infrastructure de traitement, type de matière), mais il s’agit d’un acte qui peut réduire de 40% l’impact carbone du traitement des déchets.\n" +
+            "Eteindre la lumière, un geste simple, mécanique, utile… Enfin, pas tant que ça. En réalité, si vous laissiez allumé une vieille ampoule à incandescence, connu pour être peu écologique, pendant une année entière, soit pendant 8760 heures d’affilés, vous produiriez moins d’équivalent CO2 que la production d’une paire de chaussettes : 15KgCO2eq.\n" +
+            "Les lampes à LED sont certes plus écologiques, mais c’est surtout de la poudre aux yeux au vu de ces chiffres, une faibles avancé quand d’autres actions pourraient apporter tellement plus.",
             null,
+        ],
+        "reponse": [
+            "A bien éteindre la lumière",
+            "A réparer mes appareils abimées",
+            "A recycler les déchets qui peuvent l’être",
             null,
+        ]
+    },
+    {
+        "question": "Pour un trajet quotidien de 10Km à faire, quel serait meilleur choix ?\n" +
+            "Note : nous somme en France",
+        "correction": [
+            "Le bus est généralement une bonne option pour les transports, et vos émissions pour une année de déplacement seront de 470KgCO2. Cependant, en France, les trams ont fait l’objet de plusieurs recherches qui ont réduit à 11KgCO2eq par an leurs émissions, ce qui est un record pour un transport quotient.",
+            "Effectivement ! le tram français vous représentera 11KgCO2eq par an, ce qui est très bas pour un transport, mais tous les pays n’ont pas ce choix. A défaut de tram, privilégiez le covoiturage si vous avez un véhicule électrique, et le bus sinon.",
+            "La voiture est sans doute le moyen de transport le plus souple, mais se déplacer seul sur 10km/j représente 700KgCO2eq par an, ce qui est énorme ! Pour réduire ce chiffre, il vaut mieux prendre les transports en commun, le tram français, par exemple, ne représente qu’un coût de 11KgCO2eq par an pour le même trajet. Et si la voiture est une nécessité pour vous, essayer de faire du covoiturage ou d’utiliser une voiture électrique",
+            "La voiture est sans doute le moyen de transport le plus souple, mais se déplacer seul sur 10km/j représente 700KgCO2eq par an, ce qui est énorme ! Pour réduire ce chiffre, il vaut mieux prendre les transports en commun, le tram français, par exemple, ne représente qu’un coût de 11KgCO2eq par an pour le même trajet. Et si la voiture est une nécessité pour vous, essayer de faire du covoiturage ou d’utiliser une voiture électrique",
+        ],
+        "reponse": [
+            "bus",
+            "tram",
+            "voiture (seul)",
+            "voiture électrique (seul)",
+        ]
+    },
+    {
+        "question": "La ligne TGV Paris-Toulouse permet de relier les deux villes en quelques heures, mais à quel distance vélo correspond son impact écologique ?",
+        "correction": [
+            "11000km",
+            "12000km",
+            "13000km",
+            "14000km"
+        ],
+        "reponse": [
+            "En effet, l’impact de ce trajet en train est de 3KgCO2eq, à raison de 10km à vélo par jour, il faudrait 3 ans pour émettre autant ! La ligne TGV Paris-Toulouse est très performante et son impact carbone est faible (attention, ce n’est pas le cas de toutes les lignes ferroviaires), mais un vélo ne pollue qu’en quantité négligeable à sa fabrication et l’impact écologique de son entretien et presque nul.",
+            "Et non, la bonne réponse était 11000km, un chiffre qui ne veut pas dire grand-chose tel quel. Cela représente 30km de vélo par jour pendant un an. Un vélo n’a qu’un très faible impact écologique, ce qui en fait un des moyens de transport les plus verts qui soient, mais la ligne de TGV Paris-Toulouse est elle aussi très performante, car elle n’émet que 3KgCO2eq, ce qui est bien en deçà de la moyenne ferroviaire.",
+            "Et non, la bonne réponse était 11000km, un chiffre qui ne veut pas dire grand-chose tel quel. Cela représente 30km de vélo par jour pendant un an. Un vélo n’a qu’un très faible impact écologique, ce qui en fait un des moyens de transport les plus verts qui soient, mais la ligne de TGV Paris-Toulouse est elle aussi très performante, car elle n’émet que 3KgCO2eq, ce qui est bien en deçà de la moyenne ferroviaire.",
+            "Et non, la bonne réponse était 11000km, un chiffre qui ne veut pas dire grand-chose tel quel. Cela représente 30km de vélo par jour pendant un an. Un vélo n’a qu’un très faible impact écologique, ce qui en fait un des moyens de transport les plus verts qui soient, mais la ligne de TGV Paris-Toulouse est elle aussi très performante, car elle n’émet que 3KgCO2eq, ce qui est bien en deçà de la moyenne ferroviaire.",
+        ]
+    },
+    {
+        "question": "La trottinette électrique, un moyen de transport écologique et pratique ?",
+        "correction": [
+            "VRAI",
+            "FAUX",
             null,
             null,
         ],
         "reponse": [
-            null,
-            null,
+            "La trottinette électrique, c’est ce qu’on appelle une « fausse bonne idée » : au premier aspect, c’est pratique, rapide, et vert. En réalité, la vitesse de la trottinette pose problème par rapport au comportement de ses usagers (conduite sur le trottoir, ou sans protections), mais surtout l’impact de la construction d’une trottinette est de 92KgCO2eq pour une durée de vie moyenne de 4 ans.\n" +
+            "La trottinette est donc bien moins écologique (et économique) qu’un vélo ou qu’un trajet à pied.",
+            "La trottinette électrique, c’est ce qu’on appelle une « fausse bonne idée » : au premier aspect, c’est pratique, rapide, et vert. En réalité, la vitesse de la trottinette pose problème par rapport au comportement de ses usagers (conduite sur le trottoir, ou sans protections), mais surtout l’impact de la construction d’une trottinette est de 92KgCO2eq pour une durée de vie moyenne de 4 ans.\n" +
+            "La trottinette est donc bien moins écologique (et économique) qu’un vélo ou qu’un trajet à pied.",
             null,
             null,
         ]
     },
     {
-        "question": null,
+        "question": "A votre avis, quel est la part de la France dans l’émission totale de gaz à effet de serre ?",
         "correction": [
-            null,
-            null,
-            null,
-            null,
+            "La France représente 1% des émissions mondiale de gaz à effet de serre, un chiffre qui parait bas. En réalité, il s’agit d’un mauvais argument. Premièrement parce que 1% est une proportion, et que le chiffre, lui, est de 623 000 000 000 KgCO2eq par an, un nombre colossal. Ensuite, on estime que 3% des émissions mondiales proviennent des vols commerciaux, ce qui pose la question de la cause : la France ne commande pas ces vols, mais elle les provoque par ses importations, elle a donc sa part de responsabilité. Enfin le réchauffement climatique est un problème d’ordre mondial, refuser égoïstement de lutter contre, c’est condamner l’humanité à le subir de plein fouet.",
+            "La France représente 1% des émissions mondiale de gaz à effet de serre, un chiffre qui parait bas. En réalité, il s’agit d’un mauvais argument. Premièrement parce que 1% est une proportion, et que le chiffre, lui, est de 623 000 000 000 KgCO2eq par an, un nombre colossal. Ensuite, on estime que 3% des émissions mondiales proviennent des vols commerciaux, ce qui pose la question de la cause : la France ne commande pas ces vols, mais elle les provoque par ses importations, elle a donc sa part de responsabilité. Enfin le réchauffement climatique est un problème d’ordre mondial, refuser égoïstement de lutter contre, c’est condamner l’humanité à le subir de plein fouet.",
+            "La France représente 1% des émissions mondiale de gaz à effet de serre, un chiffre qui parait bas. En réalité, il s’agit d’un mauvais argument. Premièrement parce que 1% est une proportion, et que le chiffre, lui, est de 623 000 000 000 KgCO2eq par an, un nombre colossal. Ensuite, on estime que 3% des émissions mondiales proviennent des vols commerciaux, ce qui pose la question de la cause : la France ne commande pas ces vols, mais elle les provoque par ses importations, elle a donc sa part de responsabilité. Enfin le réchauffement climatique est un problème d’ordre mondial, refuser égoïstement de lutter contre, c’est condamner l’humanité à le subir de plein fouet.",
+            "La France représente 1% des émissions mondiale de gaz à effet de serre, un chiffre qui parait bas. En réalité, il s’agit d’un mauvais argument. Premièrement parce que 1% est une proportion, et que le chiffre, lui, est de 623 000 000 000 KgCO2eq par an, un nombre colossal. Ensuite, on estime que 3% des émissions mondiales proviennent des vols commerciaux, ce qui pose la question de la cause : la France ne commande pas ces vols, mais elle les provoque par ses importations, elle a donc sa part de responsabilité. Enfin le réchauffement climatique est un problème d’ordre mondial, refuser égoïstement de lutter contre, c’est condamner l’humanité à le subir de plein fouet.",
         ],
         "reponse": [
-            null,
-            null,
-            null,
-            null,
-        ]
-    },
-    {
-        "question": null,
-        "correction": [
-            null,
-            null,
-            null,
-            null,
-        ],
-        "reponse": [
-            null,
-            null,
-            null,
-            null,
-        ]
-    },
-    {
-        "question": null,
-        "correction": [
-            null,
-            null,
-            null,
-            null,
-        ],
-        "reponse": [
-            null,
-            null,
-            null,
-            null,
-        ]
-    },
-    {
-        "question": null,
-        "correction": [
-            null,
-            null,
-            null,
-            null,
-        ],
-        "reponse": [
-            null,
-            null,
-            null,
-            null,
+            "1%",
+            "0,3% ",
+            "7%",
+            "22%",
         ]
     }
 
