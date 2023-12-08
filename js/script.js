@@ -33,7 +33,7 @@ function AfficherFrame2(answer){
 }
 
 function AfficherTexte(ou, element){
-    if (element == "" || element == null){
+    if (element === "" || element === null){
         ou.style.visibility = "hidden";
     }
     ou.textContent = element
