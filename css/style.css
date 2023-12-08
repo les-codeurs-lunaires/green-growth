@@ -72,6 +72,11 @@ body {
     color: var(--text-color);
 }
 
+.header .navbar {
+    position: fixed;
+    right: 156px;
+}
+
 /*#home-title {*/
 /*    position: relative;*/
 /*    width: 5%;*/
@@ -180,6 +185,16 @@ body {
     line-height: normal;
 }
 
+.footer-static {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    padding: 2.5%;
+    background: var(--bg-color);
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -192,6 +207,9 @@ body {
     background: var(--bg-color);
 }
 
-.footer a{
+
+
+.footer a, .footer-static a {
     position: relative;
+    padding: 10px;
 }
