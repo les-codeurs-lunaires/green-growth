@@ -1,5 +1,6 @@
 function AfficherTexte() {
-    indice2 = indice2 + 1
+    indice2 = indice2 + 1;
+    console.log(indice2)
     texte.textContent = data2[indice2];
     if (indice2 > INDICE_MAX2){
         btn_suivant.style.visibility = "hidden"
@@ -20,7 +21,7 @@ const INDICE_MAX2 = data2.length -1;
 btn_suivant = document.querySelector(`button#btn-suivant`);
 btn_informer = document.querySelector(`button#btn-info`);
 btn_qcm = document.querySelector(`button#btn-qcm`);
-texte = document.querySelector(`h1`);
+texte = document.querySelector('h1');
 
 btn_suivant.addEventListener("click", () => AfficherTexte());
 btn_informer.style.visibility = "hidden";
