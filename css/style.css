@@ -45,22 +45,6 @@ body {
     line-height: normal;
 }
 
-#texte-1 {
+#titre {
     opacity: 1;
-}
-
-#texte-2 {
-    opacity: 0;
-}
-
-#texte-3 {
-    opacity: 0;
-}
-
-#texte-4 {
-    opacity: 0;
-}
-
-#texte-5 {
-    opacity: 0;
 }
