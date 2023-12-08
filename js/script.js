@@ -71,10 +71,10 @@ choix = [Bouton1, Bouton2, Bouton3, Bouton4]
 choix.forEach(button => button.style.visibility = "visible")
 choix.forEach(button => AfficherTexte(button, data[indice]["reponse"][choix.indexOf(button)]))
 
+
 Bouton1.addEventListener("click", () => AfficherFrame2(1));
 Bouton2.addEventListener("click", () => AfficherFrame2(2));
 Bouton3.addEventListener("click", () => AfficherFrame2(3));
 Bouton4.addEventListener("click", () => AfficherFrame2(4));
-
 suivant.addEventListener("click", () => AfficherFrame1());
 

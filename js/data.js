@@ -192,31 +192,32 @@ const data = [
     {
         "question": "La ligne TGV Paris-Toulouse permet de relier les deux villes en quelques heures, mais à quel distance vélo correspond son impact écologique ?",
         "correction": [
-            "11000km",
-            "12000km",
-            "13000km",
-            "14000km"
-        ],
-        "reponse": [
             "En effet, l’impact de ce trajet en train est de 3KgCO2eq, à raison de 10km à vélo par jour, il faudrait 3 ans pour émettre autant ! La ligne TGV Paris-Toulouse est très performante et son impact carbone est faible (attention, ce n’est pas le cas de toutes les lignes ferroviaires), mais un vélo ne pollue qu’en quantité négligeable à sa fabrication et l’impact écologique de son entretien et presque nul.",
             "Et non, la bonne réponse était 11000km, un chiffre qui ne veut pas dire grand-chose tel quel. Cela représente 30km de vélo par jour pendant un an. Un vélo n’a qu’un très faible impact écologique, ce qui en fait un des moyens de transport les plus verts qui soient, mais la ligne de TGV Paris-Toulouse est elle aussi très performante, car elle n’émet que 3KgCO2eq, ce qui est bien en deçà de la moyenne ferroviaire.",
             "Et non, la bonne réponse était 11000km, un chiffre qui ne veut pas dire grand-chose tel quel. Cela représente 30km de vélo par jour pendant un an. Un vélo n’a qu’un très faible impact écologique, ce qui en fait un des moyens de transport les plus verts qui soient, mais la ligne de TGV Paris-Toulouse est elle aussi très performante, car elle n’émet que 3KgCO2eq, ce qui est bien en deçà de la moyenne ferroviaire.",
             "Et non, la bonne réponse était 11000km, un chiffre qui ne veut pas dire grand-chose tel quel. Cela représente 30km de vélo par jour pendant un an. Un vélo n’a qu’un très faible impact écologique, ce qui en fait un des moyens de transport les plus verts qui soient, mais la ligne de TGV Paris-Toulouse est elle aussi très performante, car elle n’émet que 3KgCO2eq, ce qui est bien en deçà de la moyenne ferroviaire.",
-        ]
+
+        ],
+        "reponse": [
+            "11000km",
+            "12000km",
+            "13000km",
+            "14000km"
+            ]
     },
     {
         "question": "La trottinette électrique, un moyen de transport écologique et pratique ?",
         "correction": [
-            "VRAI",
-            "FAUX",
+            "La trottinette électrique, c’est ce qu’on appelle une « fausse bonne idée » : au premier aspect, c’est pratique, rapide, et vert. En réalité, la vitesse de la trottinette pose problème par rapport au comportement de ses usagers (conduite sur le trottoir, ou sans protections), mais surtout l’impact de la construction d’une trottinette est de 92KgCO2eq pour une durée de vie moyenne de 4 ans.\n" +
+            "La trottinette est donc bien moins écologique (et économique) qu’un vélo ou qu’un trajet à pied.",
+            "La trottinette électrique, c’est ce qu’on appelle une « fausse bonne idée » : au premier aspect, c’est pratique, rapide, et vert. En réalité, la vitesse de la trottinette pose problème par rapport au comportement de ses usagers (conduite sur le trottoir, ou sans protections), mais surtout l’impact de la construction d’une trottinette est de 92KgCO2eq pour une durée de vie moyenne de 4 ans.\n" +
+            "La trottinette est donc bien moins écologique (et économique) qu’un vélo ou qu’un trajet à pied.",
             null,
             null,
         ],
         "reponse": [
-            "La trottinette électrique, c’est ce qu’on appelle une « fausse bonne idée » : au premier aspect, c’est pratique, rapide, et vert. En réalité, la vitesse de la trottinette pose problème par rapport au comportement de ses usagers (conduite sur le trottoir, ou sans protections), mais surtout l’impact de la construction d’une trottinette est de 92KgCO2eq pour une durée de vie moyenne de 4 ans.\n" +
-            "La trottinette est donc bien moins écologique (et économique) qu’un vélo ou qu’un trajet à pied.",
-            "La trottinette électrique, c’est ce qu’on appelle une « fausse bonne idée » : au premier aspect, c’est pratique, rapide, et vert. En réalité, la vitesse de la trottinette pose problème par rapport au comportement de ses usagers (conduite sur le trottoir, ou sans protections), mais surtout l’impact de la construction d’une trottinette est de 92KgCO2eq pour une durée de vie moyenne de 4 ans.\n" +
-            "La trottinette est donc bien moins écologique (et économique) qu’un vélo ou qu’un trajet à pied.",
+            "VRAI",
+            "FAUX",
             null,
             null,
         ]
