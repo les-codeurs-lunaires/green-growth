@@ -7,15 +7,14 @@ function Quitter(){
 }
 
 function AfficherFrame1(){
-    if (indice <= INDICE_MAX){
-        la_reponse.style.visibility = "hidden"
-        suivant.style.visibility = "hidden"
-        choix = [Bouton1, Bouton2, Bouton3, Bouton4]
-        choix.forEach(button => button.style.visibility = "visible")
-        choix.forEach(button => AfficherTexte(button, data[indice]["reponse"][choix.indexOf(button)]))
-        ma_question.style.visibility = "visible"
-        AfficherTexte(ma_question, data["questions"][indice]["question"])
-    }
+    la_reponse.style.visibility = "hidden"
+    suivant.style.visibility = "hidden"
+    choix = [Bouton1, Bouton2, Bouton3, Bouton4]
+    choix.forEach(button => button.style.visibility = "visible")
+    choix.forEach(button => AfficherTexte(button, data[indice]["reponse"][choix.indexOf(button)]))
+    ma_question.style.visibility = "visible"
+    AfficherTexte(ma_question, data[indice]["question"])
+
 }
 
 function AfficherFrame2(answer){
@@ -23,9 +22,17 @@ function AfficherFrame2(answer){
     choix.forEach(button => button.style.visibility = "hidden")
     ma_question.style.visibility = "hidden"
     la_reponse.style.visibility = "visible"
+    console.log(data[indice]["correction"][answer - 1])
     suivant.style.visibility = "visible"
+    suivant.textContent = "Suivant"
     AfficherTexte(la_reponse, data[indice]["correction"][answer - 1])
     indice +=1
+
+    console.log("hey")
+
+    console.log(indice)
+
+    console.log(INDICE_MAX)
     if (indice > INDICE_MAX){
 
         suivant.textContent = "S'informer"
