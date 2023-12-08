@@ -9,6 +9,7 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
 }
 
 :root {
@@ -96,7 +97,7 @@ body {
 
     color: var(--text-color);
     text-align: center;
-    font-size: 48px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
