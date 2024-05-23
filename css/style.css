@@ -130,7 +130,7 @@ body {
     display: flex;
     width: 108px;
     height: 108px;
-    padding: 0px 31.5px;
+    padding: 0 31.5px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
@@ -222,7 +222,7 @@ body {
 
 .contributeurs, .remerciementes {
     left: 0;
-    margin-top: 2000px
+    margin-top: 2000px;
     width: 100%;
 }
 
