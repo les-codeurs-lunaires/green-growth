@@ -1,0 +1,13 @@
+:root {
+    --max-font-size: 5.6rem;
+    --min-font-size: 1.6rem;
+    --max-font-weight: 700;
+
+    --bg-color: #F9F2E1;
+    --text-color: #333333;
+    --main-color: #008B8B;
+
+    --second-bg-color: #E9E2D1BF;
+    --second-text-color: #333333;
+    --second-main-color: #F4C40F;
+}

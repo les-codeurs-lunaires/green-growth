@@ -6,8 +6,8 @@ function AfficherTexte() {
         btn_suivant.style.visibility = "hidden"
         btn_informer.style.visibility = "visible"
         btn_qcm.style.visibility = "visible"
-        btn_informer.addEventListener("click", () => window.location.href = "informer.html");
-        btn_qcm.addEventListener("click", () => window.location.href = "qcm.html");
+        btn_informer.addEventListener("click", () => window.location.href = "informer");
+        btn_qcm.addEventListener("click", () => window.location.href = "qcm");
     }
 }
 

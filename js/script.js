@@ -3,7 +3,7 @@ function Quitter(){
     choix.forEach(button => button.style.visibility = "hidden")
     la_reponse.style.visibility = "hidden"
     suivant.style.visibility = "hidden"
-    document.location.href="./informer.html"
+    document.location.href="./informer"
 }
 
 function AfficherFrame1(){
