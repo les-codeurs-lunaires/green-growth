@@ -1,5 +1,12 @@
 const db_header = [
-
+    {
+        text: "Tester mes connaissances",
+        url: "qcm",
+    },
+    {
+        text: "S'informer",
+        url: "informer",
+    }
 ];
 
 const logo = {
