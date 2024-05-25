@@ -11,9 +11,9 @@ function AfficherFrame1(){
     suivant.style.visibility = "hidden"
     choix = [Bouton1, Bouton2, Bouton3, Bouton4]
     choix.forEach(button => button.style.visibility = "visible")
-    choix.forEach(button => AfficherTexte(button, data[indice]["reponse"][choix.indexOf(button)]))
+    choix.forEach(button => AfficherTexte(button, db_qcm[indice].reponse[choix.indexOf(button)]))
     ma_question.style.visibility = "visible"
-    AfficherTexte(ma_question, data[indice]["question"])
+    AfficherTexte(ma_question, db_qcm[indice].question)
 
 }
 
@@ -22,10 +22,10 @@ function AfficherFrame2(answer){
     choix.forEach(button => button.style.visibility = "hidden")
     ma_question.style.visibility = "hidden"
     la_reponse.style.visibility = "visible"
-    console.log(data[indice]["correction"][answer - 1])
+    console.log(db_qcm[indice].correction[answer - 1])
     suivant.style.visibility = "visible"
     suivant.textContent = "Suivant"
-    AfficherTexte(la_reponse, data[indice]["correction"][answer - 1])
+    AfficherTexte(la_reponse, db_qcm[indice].correction[answer - 1])
     indice +=1
 
     console.log("hey")
@@ -55,21 +55,21 @@ let Bouton1
 let Bouton2
 let Bouton3
 let Bouton4
-const INDICE_MAX = data.length -1
+const INDICE_MAX = db_qcm.length -1
 
 ma_question = document.querySelector(`#quest`);
 la_reponse = document.querySelector("#rep");
-suivant = document.querySelector(`button#suivant`);
+suivant = document.querySelector(`#suivant`);
 la_reponse.style.visibility = "hidden"
 suivant.style.visibility = "hidden"
-AfficherTexte(ma_question, data[indice]["question"])
-Bouton1 = document.querySelector(`button#bouton-1`);
-Bouton2 = document.querySelector(`button#bouton-2`);
-Bouton3 = document.querySelector(`button#bouton-3`);
-Bouton4 = document.querySelector(`button#bouton-4`);
+AfficherTexte(ma_question, db_qcm[indice].question)
+Bouton1 = document.querySelector(`#bouton-1`);
+Bouton2 = document.querySelector(`#bouton-2`);
+Bouton3 = document.querySelector(`#bouton-3`);
+Bouton4 = document.querySelector(`#bouton-4`);
 choix = [Bouton1, Bouton2, Bouton3, Bouton4]
 choix.forEach(button => button.style.visibility = "visible")
-choix.forEach(button => AfficherTexte(button, data[indice]["reponse"][choix.indexOf(button)]))
+choix.forEach(button => AfficherTexte(button, db_qcm[indice].reponse[choix.indexOf(button)]))
 
 
 Bouton1.addEventListener("click", () => AfficherFrame2(1));
