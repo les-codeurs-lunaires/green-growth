@@ -1,80 +1,55 @@
-function Quitter(){
-    ma_question.style.visibility = "hidden"
-    choix.forEach(button => button.style.visibility = "hidden")
-    la_reponse.style.visibility = "hidden"
-    suivant.style.visibility = "hidden"
-    document.location.href="./informer"
-}
-
-function AfficherFrame1(){
-    la_reponse.style.visibility = "hidden"
-    suivant.style.visibility = "hidden"
-    choix = [Bouton1, Bouton2, Bouton3, Bouton4]
-    choix.forEach(button => button.style.visibility = "visible")
-    choix.forEach(button => AfficherTexte(button, db_qcm[indice].reponse[choix.indexOf(button)]))
-    ma_question.style.visibility = "visible"
-    AfficherTexte(ma_question, db_qcm[indice].question)
-
-}
-
-function AfficherFrame2(answer){
-    choix = [Bouton1, Bouton2, Bouton3, Bouton4]
-    choix.forEach(button => button.style.visibility = "hidden")
-    ma_question.style.visibility = "hidden"
-    la_reponse.style.visibility = "visible"
-    console.log(db_qcm[indice].correction[answer - 1])
-    suivant.style.visibility = "visible"
-    suivant.textContent = "Suivant"
-    AfficherTexte(la_reponse, db_qcm[indice].correction[answer - 1])
-    indice +=1
-
-    console.log("hey")
-
-    console.log(indice)
-
-    console.log(INDICE_MAX)
-    if (indice > INDICE_MAX){
-
-        suivant.textContent = "S'informer"
-        suivant.addEventListener("click", () => Quitter());}
-}
-
-function AfficherTexte(ou, element){
-    if (element === "" || element === null){
-        ou.style.visibility = "hidden";
+function afficherQuestion(id) {
+    if (id < db_qcm.length) {
+        document.querySelector(`#title`).textContent = db_qcm[id].question;
+        let btns = document.querySelector(`#btns`);
+        btns.innerHTML = ``;
+        db_qcm[id].reponse.forEach((reponse, index) => {
+            let btn = document.createElement("button");
+            btn.classList.add("btn");
+            btn.textContent = reponse;
+            btn.addEventListener("click", () => afficherReponse(id, index));
+            btns.appendChild(btn);
+        });
     }
-    ou.textContent = element
 }
 
-let indice = 0
-let choix
-let ma_question
-let la_reponse
-let suivant
-let Bouton1
-let Bouton2
-let Bouton3
-let Bouton4
-const INDICE_MAX = db_qcm.length -1
+function afficherReponse(id, index) {
+    document.querySelector(`#title`).textContent = db_qcm[id].correction[index];
+    let btns = document.querySelector(`#btns`);
+    btns.innerHTML = ``;
+    let btn = document.createElement("button");
+    btn.classList.add("btn");
+    btn.textContent = "Suivant";
+    if (id === db_qcm.length - 1) {
+        btn.textContent = "S'informer";
+        btn.addEventListener("click", () => window.location.href = "informer");
+    } else {
+        btn.addEventListener("click", () => afficherQuestion(id + 1));
+    }
+    btns.appendChild(btn);
+}
 
-ma_question = document.querySelector(`#quest`);
-la_reponse = document.querySelector("#rep");
-suivant = document.querySelector(`#suivant`);
-la_reponse.style.visibility = "hidden"
-suivant.style.visibility = "hidden"
-AfficherTexte(ma_question, db_qcm[indice].question)
-Bouton1 = document.querySelector(`#bouton-1`);
-Bouton2 = document.querySelector(`#bouton-2`);
-Bouton3 = document.querySelector(`#bouton-3`);
-Bouton4 = document.querySelector(`#bouton-4`);
-choix = [Bouton1, Bouton2, Bouton3, Bouton4]
-choix.forEach(button => button.style.visibility = "visible")
-choix.forEach(button => AfficherTexte(button, db_qcm[indice].reponse[choix.indexOf(button)]))
+let div_content = document.querySelector(`#sv-1`);
 
-
-Bouton1.addEventListener("click", () => AfficherFrame2(1));
-Bouton2.addEventListener("click", () => AfficherFrame2(2));
-Bouton3.addEventListener("click", () => AfficherFrame2(3));
-Bouton4.addEventListener("click", () => AfficherFrame2(4));
-suivant.addEventListener("click", () => AfficherFrame1());
-
+document.addEventListener("DOMContentLoaded", function () {
+    div_content.innerHTML = `
+        <h1 id="title">Présentation du QCM</h1>
+        <p>Tous les gaz à effet de serre (responsable du réchauffement climatique) ne sont pas les mêmes,
+        mais il est difficile de comparer 1m² de méthane,
+        3Kg de dioxyde de carbone, et 4L de peroxyde d’azote.
+        Pour simplifier cela, toutes nos mesures seront en KgCO2eq :
+        équivalent kilo CO2.
+        Par exemple,
+        une émission de 2KgCO2eq signifie une émission aussi nocive écologiquement parlant que celle de 2Kg de dioxyde de carbone.
+        Ainsi les mesures deviennent plus simples à distinguer.</p>
+        <button class="btn" id="btn-start">Commencer le QCM</button>
+    `;
+    let btn_start = document.querySelector(`#btn-start`);
+    btn_start.addEventListener("click", () => {
+        div_content.innerHTML = `
+            <p class="question" id="title"></p>
+            <div class="sh" id="btns"></div>
+        `;
+        afficherQuestion(0);
+    });
+});

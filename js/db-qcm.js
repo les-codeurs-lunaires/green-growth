@@ -1,26 +1,6 @@
 const db_qcm =
     [
         {
-            question: "Presentation du QCM",
-            correction: [
-                "Tous les gaz à effet de serre (, responsable du réchauffement climatique,) " +
-                "ne sont pas les mêmes, mais il est difficile de comparer 1m² de méthane," +
-                " 3Kg de dioxyde de carbone, et 4L de peroxyde d’azote. Pour simplifier cela," +
-                " toutes nos mesures seront en KgCO2eq : équivalent kilo CO2. Par exemple, " +
-                "une émission de 2KgCO2eq signifie une émission aussi nocive écologiquement parlant" +
-                " que celle de 2Kg de dioxyde de carbone. Ainsi les mesures deviennent plus simples à distinguer.",
-                null,
-                null,
-                null,
-            ],
-            reponse: [
-                "Suivant",
-                null,
-                null,
-                null,
-            ]
-        },
-        {
             question: "Vous logez dans un 90m², vieux de 40 ans, à votre avis, quel est l’émission annuelle de gaz à effet de serre ?",
             correction: [
                 "Et non !\n" +
@@ -28,14 +8,12 @@ const db_qcm =
                 "Effectivement ! La consommation moyenne d’un 90m² obsolète est de 3 600KgCO2eq, ce qui est énorme ! En le rénovant, ce chiffre tombe à 3 tonnes par an.",
                 "Et non !\n" +
                 "La consommation moyenne d’un 90m² obsolète est de 3 600KgCO2eq, ce qui est énorme ! En le rénovant, ce chiffre tombe à 3 tonnes par an.",
-                null,
             ],
     
             reponse: [
                 " 3,2 tonnes",
                 " 3,6 tonnes",
                 " 5,8 tonnes",
-                null,
             ]
         },
         {
@@ -43,14 +21,10 @@ const db_qcm =
             correction: [
                 "La construction en matériau biosourcé d’un 90m² est d’environ 13 tonnes, contre 43 tonnes en moyenne contre une construction classique. Le béton imperméabilise les sols et augmente la vulnérabilité aux inondations et aux sécheresse, mais reste l’option la plus commune, car elle est plus simple d’accès et moins chère en moyenne que le bâti biosourcé.",
                 "La construction en matériau biosourcé d’un 90m² est d’environ 13 tonnes, contre 43 tonnes en moyenne contre une construction classique. Le béton imperméabilise les sols et augmente la vulnérabilité aux inondations et aux sécheresse, mais reste l’option la plus commune, car elle est plus simple d’accès et moins chère en moyenne que le bâti biosourcé.",
-                null,
-                null,
             ],
             reponse: [
                 "En béton, le classique",
                 "En matériau biosourcé, qu’importe le prix ",
-                null,
-                null,
             ]
         },
         {
@@ -59,13 +33,11 @@ const db_qcm =
                 "L’alimentation cause une émission de gaz à effet de serre importante, mais elle est toujours plus basse que le chauffage, et selon le régime, elle peut même être moins néfaste pour l’environnement que tes habits !",
                 "Le chauffage est la première cause d’émission de gaz à effet de serre d’un foyer, c’est d’ailleurs l’élément visé en priorité lors d’une rénovation. Une bonne isolation et un chauffage peu polluant est un des meilleurs moyens de limiter les dépenses, tant écologique qu’économiques, c’est peut-être l’action la plus significative à la portée de la majorité des gens, et c’est sans compromis : elle est utile à tous. ",
                 "Les habits ont une empreinte carbone plus élevée qu’il n’y parait, une garde-robe de 30 vêtements (pull, tee-shirt, chaussettes) représente 510KgCO2eq, c’est plus qu’un an de trajet en bus (10km/j). Par contre, le chauffage émet beaucoup plus !",
-                null,
             ],
             reponse: [
                 "L’alimentation",
                 "Le chauffage",
                 "Les vêtements",
-                null,
             ]
         },
         {
@@ -74,13 +46,11 @@ const db_qcm =
                 "Une consommation exclusivement végétarienne représente moins de 200KgCO2eq par an en moyenne, qui sont répartis entre le transport et le protoxyde d’azote (gaz à effet de serre) émit par l’engrais. Une consommation quotidienne de poulet, elle, correspond en moyenne à 500KgCO2eq par an, car le poulet mange des aliments dont la culture est prise en compte. Le bœuf, lui, rumine et produit du méthane, en plus de la grande quantité de nourriture qui lui sont nécessaire pour grandir, sa consommation quotidienne atteint 2300 KgCO2eq d’émission annuelle.Une consommation exclusivement végétarienne représente moins de 200KgCO2eq par an en moyenne, qui sont répartis entre le transport et le protoxyde d’azote (gaz à effet de serre) émit par l’engrais. Une consommation quotidienne de poulet, elle, correspond en moyenne à 500KgCO2eq par an, car le poulet mange des aliments dont la culture est prise en compte. Le bœuf, lui, rumine et produit du méthane, en plus de la grande quantité de nourriture qui lui sont nécessaire pour grandir, sa consommation quotidienne atteint 2300 KgCO2eq d’émission annuelle.",
                 "Une consommation exclusivement végétarienne représente moins de 200KgCO2eq par an en moyenne, qui sont répartis entre le transport et le protoxyde d’azote (gaz à effet de serre) émit par l’engrais. Une consommation quotidienne de poulet, elle, correspond en moyenne à 500KgCO2eq par an, car le poulet mange des aliments dont la culture est prise en compte. Le bœuf, lui, rumine et produit du méthane, en plus de la grande quantité de nourriture qui lui sont nécessaire pour grandir, sa consommation quotidienne atteint 2300 KgCO2eq d’émission annuelle.Une consommation exclusivement végétarienne représente moins de 200KgCO2eq par an en moyenne, qui sont répartis entre le transport et le protoxyde d’azote (gaz à effet de serre) émit par l’engrais. Une consommation quotidienne de poulet, elle, correspond en moyenne à 500KgCO2eq par an, car le poulet mange des aliments dont la culture est prise en compte. Le bœuf, lui, rumine et produit du méthane, en plus de la grande quantité de nourriture qui lui sont nécessaire pour grandir, sa consommation quotidienne atteint 2300 KgCO2eq d’émission annuelle.",
                 "Une consommation exclusivement végétarienne représente moins de 200KgCO2eq par an en moyenne, qui sont répartis entre le transport et le protoxyde d’azote (gaz à effet de serre) émit par l’engrais. Une consommation quotidienne de poulet, elle, correspond en moyenne à 500KgCO2eq par an, car le poulet mange des aliments dont la culture est prise en compte. Le bœuf, lui, rumine et produit du méthane, en plus de la grande quantité de nourriture qui lui sont nécessaire pour grandir, sa consommation quotidienne atteint 2300 KgCO2eq d’émission annuelle.Une consommation exclusivement végétarienne représente moins de 200KgCO2eq par an en moyenne, qui sont répartis entre le transport et le protoxyde d’azote (gaz à effet de serre) émit par l’engrais. Une consommation quotidienne de poulet, elle, correspond en moyenne à 500KgCO2eq par an, car le poulet mange des aliments dont la culture est prise en compte. Le bœuf, lui, rumine et produit du méthane, en plus de la grande quantité de nourriture qui lui sont nécessaire pour grandir, sa consommation quotidienne atteint 2300 KgCO2eq d’émission annuelle.",
-                null,
             ],
             reponse: [
                 "Du bœuf, j’aime la viande rouge",
                 "Du poulet, c’est mieux pour maigrir",
                 "De la viande ? Non, je ne mange que des légumes",
-                null,
             ]
         },
         {
@@ -88,14 +58,10 @@ const db_qcm =
             correction: [
                 "Bien que cela paraisse contre intuitif, il est en réalité moins mauvais d’importer des légumes en avions ou en bateau depuis l’autre bout du monde, que de les produire hors saisons localement, en effet le chauffage est une grande source d’émission de gaz à effet de serre. On estime les émissions, pour 5 fruits et légumes par jours, à 240kgCO2eq par an en importation contre 400KgCO2eq.an-1 pour du local hors saison. Evidemment, il est bien plus écologique d’acheter des aliments locaux de saisons, puisque le seul facteur néfaste est le transport, qui vaut moins de 50KgCO2eq.",
                 "Bien que cela paraisse contre intuitif, il est en réalité moins mauvais d’importer des légumes en avions ou en bateau depuis l’autre bout du monde, que de les produire hors saisons localement, en effet le chauffage est une grande source d’émission de gaz à effet de serre. On estime les émissions, pour 5 fruits et légumes par jours, à 240kgCO2eq par an en importation contre 400KgCO2eq.an-1 pour du local hors saison. Evidemment, il est bien plus écologique d’acheter des aliments locaux de saisons, puisque le seul facteur néfaste est le transport, qui vaut moins de 50KgCO2eq.",
-                null,
-                null,
             ],
             reponse: [
                 "Local, c’est toujours mieux",
                 "J’importe depuis l’autre bon du monde, vive la mondialisation",
-                null,
-                null,
             ]
         },
         {
@@ -122,14 +88,10 @@ const db_qcm =
             correction: [
                 "40 pulls, comme les trucs immondes qu’on reçoit à Noël",
                 " 1m² de panneau publicitaire",
-                null,
-                null,
             ],
             reponse: [
                 "Et non ! En réalité, un simple mètre carré de panneau publicitaire représente 650KgCO2eq, soit un peu plus que 45 pulls, c’est énorme !",
                 "En effet ! Un seul mètre cube de panneau publicitaire, en plus de gâcher le paysage, représente 650KgCO2eq, et ça, ça fait mal à la planète….",
-                null,
-                null,
             ]
         },
         {
@@ -137,14 +99,10 @@ const db_qcm =
             correction: [
                 "En effet ! 20 minutes par jour, cela peut sembler peu, mais ça représente néanmoins 50KgCO2eq par an. Comparé à d’autres facteurs, on pourrait croire que ce chiffre est négligeable, mais il est multiplié par chaque adepte du streaming, et comme le disait Antoine Furetière : les petits ruisseaux forment les grandes rivières.",
                 "C’est faux ! Contrairement aux idées reçu, 20 minutes de vidéo par jours représente 50KgCO2eq par an, par personne. Ce nombre, de prime abord négligeable face, par exemple, aux émission du Bâtiment ou de l’Agriculture, est en réalité un des « petits ruisseaux qui forment les grandes rivières ».",
-                null,
-                null,
             ],
             reponse: [
                 "FAUX",
                 "VRAI",
-                null,
-                null,
             ]
         },
         {
@@ -165,13 +123,11 @@ const db_qcm =
                 "L’avantage du recyclage, lui, peut difficilement être estimé car il présente trop de variable (localisation, infrastructure de traitement, type de matière), mais il s’agit d’un acte qui peut réduire de 40% l’impact carbone du traitement des déchets.\n" +
                 "Eteindre la lumière, un geste simple, mécanique, utile… Enfin, pas tant que ça. En réalité, si vous laissiez allumé une vieille ampoule à incandescence, connu pour être peu écologique, pendant une année entière, soit pendant 8760 heures d’affilés, vous produiriez moins d’équivalent CO2 que la production d’une paire de chaussettes : 15KgCO2eq.\n" +
                 "Les lampes à LED sont certes plus écologiques, mais c’est surtout de la poudre aux yeux au vu de ces chiffres, une faibles avancé quand d’autres actions pourraient apporter tellement plus.",
-                null,
             ],
             reponse: [
                 "A bien éteindre la lumière",
                 "A réparer mes appareils abimées",
                 "A recycler les déchets qui peuvent l’être",
-                null,
             ]
         },
         {
@@ -213,14 +169,10 @@ const db_qcm =
                 "La trottinette est donc bien moins écologique (et économique) qu’un vélo ou qu’un trajet à pied.",
                 "La trottinette électrique, c’est ce qu’on appelle une « fausse bonne idée » : au premier aspect, c’est pratique, rapide, et vert. En réalité, la vitesse de la trottinette pose problème par rapport au comportement de ses usagers (conduite sur le trottoir, ou sans protections), mais surtout l’impact de la construction d’une trottinette est de 92KgCO2eq pour une durée de vie moyenne de 4 ans.\n" +
                 "La trottinette est donc bien moins écologique (et économique) qu’un vélo ou qu’un trajet à pied.",
-                null,
-                null,
             ],
             reponse: [
                 "VRAI",
                 "FAUX",
-                null,
-                null,
             ]
         },
         {

@@ -1,63 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- OpenGraph-->
-    <title>Green Growth</title>
-    <meta name="description" content="Green Growth est un site web réalisé durant la nuit de l'info en 16H32 par notre équipe de cinq membres.
-                                      La version en ligne est celle rendue lors du concours, une mise à jour de type correctif est prévue.">
-    <meta property="og:url" content="https://les-codeurs-lunaires.github.io/green-growth/">
-    <meta property="og:title" content="Green Growth">
-    <meta property="og:description" content="Green Growth est un site web réalisé durant la nuit de l'info en 16H32 par notre équipe de cinq membres.
-                                      La version en ligne est celle rendue lors du concours, une mise à jour de type correctif est prévue.">
-    <meta property="og:image" content="../images/leaf-svgrepo-com.svg">
+        <!-- OpenGraph-->
+        <title>Green Growth</title>
+        <meta name="description" content="Green Growth est un site web réalisé durant la nuit de l'info en 16H32 par notre équipe de cinq membres.
+                                          La version en ligne est celle rendue lors du concours, une mise à jour de type correctif est prévue.">
+        <meta property="og:url" content="https://les-codeurs-lunaires.github.io/green-growth/">
+        <meta property="og:title" content="Green Growth">
+        <meta property="og:description" content="Green Growth est un site web réalisé durant la nuit de l'info en 16H32 par notre équipe de cinq membres.
+                                          La version en ligne est celle rendue lors du concours, une mise à jour de type correctif est prévue.">
+        <meta property="og:image" content="../images/favicon.svg">
 
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="images/leaf-svgrepo-com.svg">
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="images/favicon.svg">
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="css/qcm.css">
-</head>
+        <!-- font awesome -->
+        <link rel="stylesheet" href="css/qcm.css">
+    </head>
 
-<body data-active="QCM">
+    <body data-active="QCM">
 
-<header class="header"></header>
+    <header class="header"></header>
 
-    <section class="section-question">
-        <div class="sv">
-            <p class="question" id="quest"></p>
+        <section class="section-question">
+            <div class="sv" id="sv-1">
+                <p class="question" id="title"></p>
 
-            <div class="sh">
-                <button class="btn" id="bouton-1"></button>
-
-                <button class="btn" id="bouton-2"></button>
-
-                <button class="btn" id="bouton-3"></button>
-
-                <button class="btn" id="bouton-4"></button>
+                <div class="sh" id="btns"></div>
             </div>
-            <img  alt="" src="">
+        </section>
 
-            <p id="rep"></p>
+        <footer class="footer"></footer>
 
-            <button class="btn" id="suivant"></button>
-        </div>
-    </section>
-
-    <footer class="footer"></footer>
-
-    <script src="js/db-header.js"></script>
-    <script src="https://untypequicode.github.io/script.js/js/header.js"></script>
-    <script src="js/db-footer.js"></script>
-    <script src="https://untypequicode.github.io/script.js/js/footer.js"></script>
-    <script src="js/db-qcm.js"></script>
-    <script src="js/qcm.js"></script>
-</body>
-
-
-
-
+        <script src="js/db-header.js"></script>
+        <script src="https://untypequicode.github.io/script.js/js/header.js"></script>
+        <script src="js/db-footer.js"></script>
+        <script src="https://untypequicode.github.io/script.js/js/footer.js"></script>
+        <script src="js/db-qcm.js"></script>
+        <script src="js/qcm.js"></script>
+    </body>
 </html>

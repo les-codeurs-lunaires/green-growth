@@ -3,7 +3,6 @@ let indice = 0;
 const INDICE_MAX2 = db_home.length -1;
 
 document.addEventListener("DOMContentLoaded", () => {
-    div_content.style.visibility = "visible";
     div_content.innerHTML = `
         <h1 id="cinematic">Un monde idéal ?</h1>
         <button class="btn" id="btn-suivant">Suivant</button>
